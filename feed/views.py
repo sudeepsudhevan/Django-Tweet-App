@@ -1,4 +1,6 @@
 from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView
+
 from .models import Post
 
 
@@ -15,4 +17,10 @@ class PostDetailView(DetailView):
     template_name = 'feed/detail.html'
     model = Post
     context_object_name = 'post'
-      
+
+
+class CreateNewPost(CreateView):
+    template_name = 'feed/create.html'
+    model = Post
+    fields = ['text']
+    success_url = '/'
