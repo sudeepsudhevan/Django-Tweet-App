@@ -1,0 +1,54 @@
+.auth-container > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #007bff;
+}
+
+.auth-container p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.auth-container input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.auth-container form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-container form button:hover {
+    background-color: #0056b3;
+}
+
+.auth-container .helptext {
+    font-size: 12px;
+    color: #6c757d;
+}
