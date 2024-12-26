@@ -152,6 +152,13 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend"
 )
 
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_DIR, 'frontend/'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+# static files are (CSS, JavaScript, images)
+
 # https://django-allauth.readthedocs.io/en/latest/account/configuration.html
 
 # Default primary key field type
