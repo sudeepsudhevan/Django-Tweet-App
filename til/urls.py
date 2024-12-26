@@ -17,12 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include, re_path
 from feed import urls as feed_urls
+from profiles import urls as profiles_urls
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(feed_urls, namespace='feed')),
+    path('profiles/', include(profiles_urls, namespace='profiles')),
     re_path("", include("allauth.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
